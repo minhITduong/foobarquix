@@ -7,6 +7,7 @@ import { FooBarQuixService } from '../foo-bar-quix.service';
   templateUrl: './foo-bar-quix.component.html'
 })
 export class FooBarQuixComponent implements OnInit, OnDestroy {
+  result: String = "";
 
   constructor(private fooBarQuixService: FooBarQuixService) { }
 
@@ -18,7 +19,10 @@ export class FooBarQuixComponent implements OnInit, OnDestroy {
 
   convertNumber(inputNumber: number): void {
     this.fooBarQuixService.sendNumber(inputNumber)
-      .subscribe(response => console.log(response))
+      .subscribe(response => {
+        console.log(response.result),
+        this.result = response.result
+      })
     ;
   }
 
