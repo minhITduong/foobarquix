@@ -1,0 +1,20 @@
+.content {
+  .container {
+    padding: 30px 0 0;
+
+    .result {
+      .card {
+        .card-body {
+          background-color: rgba(128,128,128,0.1);
+          font-size: 20px;
+          height: 80px;
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          border-radius: 3px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

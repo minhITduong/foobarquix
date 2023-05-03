@@ -1,9 +1,11 @@
-<div>
+<div class="content">
   <div class="container">
-    <h2>Already converted values : </h2>
-    <div>
-      <div class="card" *ngFor="let convert of convertedResults">
-        <div class="card-body">
+    <div class="title">
+      <h2>Already converted values : </h2>
+    </div>
+    <div class="result">
+      <div class="card">
+        <div class="card-body" *ngFor="let convert of convertedResults">
           <div class="card-text">{{convert.inputNumber}} and the result is {{convert.result}}</div>
         </div>
       </div>
