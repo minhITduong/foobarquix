@@ -21,7 +21,6 @@ export class FooBarQuixComponent implements OnInit, OnDestroy {
   convertNumber(inputNumber: number): void {
     this.fooBarQuixService.sendNumber(inputNumber)
       .subscribe(response => {
-        console.log(response.result),
         this.convertedResults.push({inputNumber, result : response.result}),
         this.convertedResults.forEach(element => console.log(element))
       })
