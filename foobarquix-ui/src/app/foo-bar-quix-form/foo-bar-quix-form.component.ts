@@ -21,6 +21,7 @@ export class FooBarQuixFormComponent implements OnInit {
   onSubmitClick(): void {
     console.log(this.inputNumber);
     this.submitNumberOutput$.emit(this.inputNumber);
+    this.inputNumber = null;
   }
 
 }
